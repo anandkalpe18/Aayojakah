@@ -1,0 +1,33 @@
+﻿body {
+    background: #9796f0; /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #fbc7d4, #9796f0); /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #fbc7d4, #9796f0); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+    font-weight: 200;
+    color: black;
+    
+}
+
+.panel{
+    background-color:transparent;
+    border: solid 2px blue;
+}
+
+.row{
+    padding:5px;
+}
+
+
+.panel-heading{
+    font-size: 3em;
+    text-align:center;
+    font-weight: 700;
+    color: midnightblue;
+    
+}
+
+.panel panel-default{
+    background-color: cadetblue;
+    border:solid 2px solid;
+}
+

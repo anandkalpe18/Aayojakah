@@ -1,0 +1,52 @@
+﻿@model Aayojakah.Model.LoginViewModel
+ 
+
+<head>
+    <link href="~/css/loginPage.css" rel="stylesheet" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js" />
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js" />
+    <link href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" />
+   
+    <title>Login</title>
+
+
+</head>
+
+<div class="wrapper">
+    <h1>Login</h1>
+   
+
+    @if (ViewBag.errormessage != null)
+    {
+<p class="alert alert-danger" id="successMessage">@ViewBag.errormessage</p>}
+
+
+    <div class="logo">
+        <img src="~/Aayojakah.png" alt="">
+    </div>
+
+    <div class="text-center mt-4 name">
+        
+    </div>
+
+    <form class="p-3 mt-3" asp-controller="Login" asp-action="Login" method="post">
+        <div class="form-field d-flex align-items-center">
+            <span class="far fa-user"></span>
+            @*<label class="control-label" asp-for="Username">Username</label>*@
+            <input autocomplete="off" asp-for="Username" type="text" placeholder="Username" class="form-control" />
+            <span asp-validation-for="Username"></span>
+        </div>
+        <div class="form-field d-flex align-items-center">
+            <span class="fas fa-key"></span>
+            @*<label class="control-label" asp-for="Password">Password</label>*@
+            <input autocomplete="off" asp-for="Password" type="password" placeholder="Password" class="form-control" />
+            <span asp-validation-for="Password"></span>
+        </div>
+        <button class="btn mt-3">Login</button>
+    </form>
+    <div class="register" style="text-align: center;">
+        @Html.ActionLink("Create Account", "Registration", "Registration")
+    </div>
+</div>
+

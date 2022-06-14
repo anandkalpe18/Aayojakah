@@ -1,0 +1,15 @@
+﻿@{
+    Layout = "~/Views/Shared/_LayoutCustomer.cshtml";
+}
+
+@if (ViewData["BookingFoodMessage"] != null)
+{
+    <p class="alert alert-success" id="successMessage">@ViewData["BookingFoodMessage"]</p>
+    <nav aria-label="...">
+        <ul class="pagination">
+           
+            <li class="page-item"> @Html.ActionLink("Click Here to Book Light", "BookLight", "BookLight")</li>
+
+        </ul>
+    </nav>
+}
