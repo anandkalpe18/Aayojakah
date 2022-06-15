@@ -2,10 +2,37 @@
 <!DOCTYPE html>
 <html>
 <head>
+    <style>
+        footer {
+            background-color: #1C4E80;
+            font-family: Raleway;
+            color: antiquewhite;
+            padding-left: 13%;
+            padding-right: 15%;
+            position:fixed;
+            bottom: 0;
+            height: 40px;
+            left: 0;
+            width: 100%;
+            font-weight: 700;
+            padding-top: 10px;
+        }
+
+        #copyright {
+            color: antiquewhite;
+            text-align: right;
+            float: right;
+        }
+
+        #developer {
+            color: antiquewhite;
+            text-align: left;
+        }
+    </style>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="shortcut icon" href="~/eventManagement.png">
-   
+
 
 
     <environment names="Development">
@@ -69,7 +96,9 @@
         @RenderBody()
         <hr />
         <footer>
-            <p>&copy; 2022 - Aayojakah</p>
+            <a id="developer">Developed by -  </a>
+            <a id="copyright">Copyright © 2022 . All rights reserved.</a>
+
         </footer>
     </div>
 

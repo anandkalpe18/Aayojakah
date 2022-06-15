@@ -40,6 +40,7 @@ h1 {
     background-color: #ecf0f3;
     border-radius: 15px;
     box-shadow: 13px 13px 20px #cbced1, -13px -13px 20px #fff;
+    
 }
 
 .logo {
@@ -66,24 +67,32 @@ h1 {
 .wrapper .form-field label {
     margin: 5px;
     color :#555 ;
+    outline:none;
+    border:none;
 }
+
 
 
 .wrapper .form-field input {
     margin: 5px;
     text-decoration: none;
-    width: 100%;
-    /*display: block;*/
-    border: none;
+    width: 100% ;
+    border-radius:25px;
+    display: block;
+    border: none ;
     outline: none;
     background: none;
     font-size: 1.2rem;
     color: #666;
     padding: 10px 15px 10px 10px;
-    /* border: 1px solid red; */
-}
+    
+ }
+    
+
 
 .wrapper .form-field {
+    outline:none;
+    border:none;
     padding-left: 10px;
     margin-bottom: 20px;
     border-radius: 20px;
@@ -91,7 +100,10 @@ h1 {
 }
 
     .wrapper .form-field .fas {
+        
         color: #555;
+        border:none;
+        outline:none;
     }
 
 .wrapper .btn {
@@ -118,10 +130,10 @@ h1 {
     color: #03A9F4;
 }
 
-    /*.wrapper a:hover {
+    .wrapper a:hover {
         color: #039BE5;
     }
-        */
+        
 
 @media(max-width: 380px) {
     .wrapper {

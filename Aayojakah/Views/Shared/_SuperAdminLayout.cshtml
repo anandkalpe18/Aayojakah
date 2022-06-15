@@ -3,6 +3,7 @@
 <!DOCTYPE html>
 <html>
 <head>
+    <link rel="shortcut icon" href="~/eventManagement.png">
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>@ViewData["Title"] Dashboard - @Context.Session.GetString("Username")</title>
@@ -31,19 +32,19 @@
         <script src="~/lib/bootstrap/dist/js/bootstrap.js"></script>
         <script src="~/lib/datetimepicker/jqueryui.js"></script>
         <script src="~/js/site.js" asp-append-version="true"></script>
-        
+
     </environment>
 
     <script>
-         $(document).ready(function () {
-             function DisableBackButton() {
-                 window.history.forward()
-             }
-             DisableBackButton();
-             window.onload = DisableBackButton;
-             window.onpageshow = function (evt) { if (evt.persisted) DisableBackButton() }
-             window.onunload = function () { void (0) }
-         });
+        $(document).ready(function () {
+            function DisableBackButton() {
+                window.history.forward()
+            }
+            DisableBackButton();
+            window.onload = DisableBackButton;
+            window.onpageshow = function (evt) { if (evt.persisted) DisableBackButton() }
+            window.onunload = function () { void (0) }
+        });
     </script>
 
     @Html.Raw(JavaScriptSnippet.FullScript)

@@ -3,6 +3,34 @@
 <!DOCTYPE html>
 <html>
 <head>
+    <link rel="shortcut icon" href="~/eventManagement.png">
+    <style>
+        footer {
+            background-color: #1C4E80;
+            font-family: Raleway;
+            color: antiquewhite;
+            padding-left: 13%;
+            padding-right: 15%;
+            position: absolute;
+            bottom: 0;
+            height: 40px;
+            left: 0;
+            width: 100%;
+            font-weight: 700;
+            padding-top: 10px;
+        }
+
+        #copyright {
+            color: antiquewhite;
+            text-align: right;
+            float: right;
+        }
+
+        #developer {
+            color: antiquewhite;
+            text-align: left;
+        }
+    </style>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>@ViewData["Title"] Dashboard - @Context.Session.GetString("Username") </title>
@@ -32,23 +60,24 @@
     </environment>
 
     @*<link href="https://cdn.datatables.net/1.10.15/css/dataTables.bootstrap.min.css" rel="stylesheet" />
-    <link href="https://cdn.datatables.net/responsive/2.1.1/css/responsive.bootstrap.min.css" rel="stylesheet" />
-    <script src="https://cdn.datatables.net/1.10.15/js/jquery.dataTables.min.js"></script>
-    <script src="https://cdn.datatables.net/1.10.15/js/dataTables.bootstrap4.min.js"></script>*@
+        <link href="https://cdn.datatables.net/responsive/2.1.1/css/responsive.bootstrap.min.css" rel="stylesheet" />
+        <script src="https://cdn.datatables.net/1.10.15/js/jquery.dataTables.min.js"></script>
+        <script src="https://cdn.datatables.net/1.10.15/js/dataTables.bootstrap4.min.js"></script>*@
 
-   
 
-    <script>
-        $(document).ready(function () {
-            function DisableBackButton() {
-                window.history.forward()
-            }
-            DisableBackButton();
-            window.onload = DisableBackButton;
-            window.onpageshow = function (evt) { if (evt.persisted) DisableBackButton() }
-            window.onunload = function () { void (0) }
-        });
-    </script>
+    @*
+        <script>
+            $(document).ready(function () {
+                function DisableBackButton() {
+                    window.history.forward()
+                }
+                DisableBackButton();
+                window.onload = DisableBackButton;
+                window.onpageshow = function (evt) { if (evt.persisted) DisableBackButton() }
+                window.onunload = function () { void (0) }
+            });
+        </script>
+    *@
 
     @Html.Raw(JavaScriptSnippet.FullScript)
 </head>
@@ -69,8 +98,8 @@
                     <li><a asp-area="" asp-controller="Booking" asp-action="BookingVenue">Book Event</a></li>
                     <li><a asp-area="" asp-controller="ShowAllBooking" asp-action="AllBookings">Booking Status</a></li>
                     @*<li><a asp-area="" asp-controller="UserProfile" asp-action="Profile">Profile</a></li>*@
-                    <li><a asp-area="" asp-controller="Customer" asp-action="ChangePassword">ChangePassword</a></li>
-                    <li style="margin-left:300px"> <a asp-area="" asp-controller="UserProfile" asp-action="Profile" class="table-hover">Hi @Context.Session.GetString("Username") !</a> </li>
+                    @*<li><a asp-area="" asp-controller="Customer" asp-action="ChangePassword">ChangePassword</a></li>*@
+                    <li style="margin-left:600px"> <a asp-area="" asp-controller="UserProfile" asp-action="Profile" class="table-hover">Hi @Context.Session.GetString("Username") !</a> </li>
                     
                     <li><a asp-area="" asp-controller="Login" asp-action="Logout">LogOut</a></li> 
                </ul>
@@ -81,7 +110,9 @@
         @RenderBody()
         <hr />
         <footer>
-            <p>&copy; 2022 - Aayojakah</p>
+            <a id="developer">Developed by -  </a>
+            <a id="copyright">Copyright © 2022 . All rights reserved.</a>
+            
         </footer>
     </div>
 

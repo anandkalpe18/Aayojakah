@@ -3,6 +3,33 @@
 <!DOCTYPE html>
 <html>
 <head>
+    <style>
+        footer {
+            background-color: #1C4E80;
+            font-family: Raleway;
+            color: antiquewhite;
+            padding-left: 13%;
+            padding-right: 15%;
+            position: absolute;
+            bottom: 0;
+            height: 40px;
+            left: 0;
+            width: 100%;
+            font-weight: 700;
+            padding-top: 10px;
+        }
+
+        #copyright {
+            color: antiquewhite;
+            text-align: right;
+            float: right;
+        }
+
+        #developer {
+            color: antiquewhite;
+            text-align: left;
+        }
+    </style>
     <link href="~/eventManagement.png" rel=" shortcut icon" />
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -35,54 +62,63 @@
 
     </environment>
 
-    <script>
-        $(document).ready(function () {
-            function DisableBackButton() {
-                window.history.forward()
-            }
-            DisableBackButton();
-            window.onload = DisableBackButton;
-            window.onpageshow = function (evt) { if (evt.persisted) DisableBackButton() }
-            window.onunload = function () { void (0) }
-        });
-    </script>
+    @*
+        <script>
+            $(document).ready(function () {
+                function DisableBackButton() {
+                    window.history.forward()
+                }
+                DisableBackButton();
+                window.onload = DisableBackButton;
+                window.onpageshow = function (evt) { if (evt.persisted) DisableBackButton() }
+                window.onunload = function () { void (0) }
+            });
+        </script>
+    *@
 
     @Html.Raw(JavaScriptSnippet.FullScript)
+
+
 </head>
 <body style="background-color: #DADADA">
-    <nav class="navbar navbar-inverse navbar-fixed-top" style="background-color:#1C4E80">
-        <div class="container">
-            <div class="navbar-header">
-                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
-                    <span class="sr-only">Toggle navigation</span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                </button>
-                <a asp-area="" asp-controller="Admin" asp-action="Dashboard" class="navbar-brand">Dashboard</a>
-            </div>
-            <div class="navbar-collapse collapse">
-                <ul class="nav navbar-nav">
-                    <li><a asp-area="" asp-controller="Venue" asp-action="Add">Add Venue</a></li>
-                    <li><a asp-area="" asp-controller="Equipment" asp-action="Add">Add Equiments</a></li>
-                    <li><a asp-area="" asp-controller="Food" asp-action="Add">Add Food</a></li>
-                    <li><a asp-area="" asp-controller="Light" asp-action="Add">Add Light</a></li>
-                    <li><a asp-area="" asp-controller="Flower" asp-action="Add">Add Flower</a></li>
-                    <li><a asp-area="" asp-controller="ShowBookingDetails" asp-action="AllBookings">Bookings Approvals</a></li>
-                    <li><a asp-area="" asp-controller="UsersProfiles" asp-action="Profile">User Profiles</a></li>
-                    <li style="margin-left:50px"> <a asp-area="" asp-controller="AdminProfile" asp-action="Profile">Hi @Context.Session.GetString("Username") !</a> </li>
-                    <li><a asp-area="" asp-controller="Login" asp-action="Logout">LogOut</a></li>
+    <nav class="navbar navbar-inverse navbar-fixed-top" style="background-color:#1C4E80">        
+            <div class="container">
+                <div class="navbar-header">             
 
-                </ul>
+                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+
+                    <a asp-area="" asp-controller="Admin" asp-action="Dashboard" class="navbar-brand"><i></i>Dashboard</a>
+                </div>
+                <div class="navbar-collapse collapse">
+                    <ul class="nav navbar-nav">
+                        <li><a asp-area="" asp-controller="Venue" asp-action="Add">Add Venue</a></li>
+                        <li><a asp-area="" asp-controller="Equipment" asp-action="Add">Add Equiments</a></li>
+                        <li><a asp-area="" asp-controller="Food" asp-action="Add">Add Food</a></li>
+                        <li><a asp-area="" asp-controller="Light" asp-action="Add">Add Light</a></li>
+                        <li><a asp-area="" asp-controller="Flower" asp-action="Add">Add Flower</a></li>
+                        <li><a asp-area="" asp-controller="ShowBookingDetails" asp-action="AllBookings">Bookings Approvals</a></li>
+                        <li><a asp-area="" asp-controller="UsersProfiles" asp-action="Profile">User Profiles</a></li>
+                        <li style="margin-left:50px"> <a asp-area="" asp-controller="AdminProfile" asp-action="Profile">Hi @Context.Session.GetString("Username") !</a> </li>
+                        <li><a asp-area="" asp-controller="Login" asp-action="Logout">LogOut</a></li>
+
+                    </ul>
+                </div>
             </div>
-        </div>
     </nav>
     <div class="container body-content">
+        
         
         @RenderBody()
         <hr />
         <footer>
-            <p>&copy; 2022 - Aayojakah </p>
+            <a id="developer">Developed by -  </a>
+            <a id="copyright">Copyright © 2022 . All rights reserved.</a>
+
         </footer>
     </div>
 
