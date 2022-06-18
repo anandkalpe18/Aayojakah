@@ -1,0 +1,29 @@
+﻿.logo {
+    float: left;
+    padding-left: 2px;
+    margin-left: 100px;
+}
+
+.navbar-brand {
+    margin: 0;
+    padding: 0;
+}
+
+.logo {
+    height: 40px;
+    padding-right: 15px;
+    padding-left: 5px;
+}
+
+.navbar-collapse {
+    float: right;
+}
+
+.home:hover {
+    background-color: black;
+    border-radius: 3px;
+}
+
+.b1:hover {
+    color: black;
+}
