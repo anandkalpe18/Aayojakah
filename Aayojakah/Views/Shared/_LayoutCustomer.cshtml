@@ -5,13 +5,16 @@
 <head>
     <link rel="shortcut icon" href="~/eventManagement.png">
     <style>
+        .container {
+            min-height:calc(100vh-200px-40px);
+        }
         footer {
             background-color: #1C4E80;
             font-family: Raleway;
             color: antiquewhite;
             padding-left: 13%;
             padding-right: 15%;
-            position: absolute;
+            position: fixed;
             bottom: 0;
             height: 40px;
             left: 0;
@@ -109,11 +112,7 @@
     <div class="container body-content">
         @RenderBody()
         <hr />
-        <footer>
-            <a id="developer">Developed by -  </a>
-            <a id="copyright">Copyright © 2022 . All rights reserved.</a>
-            
-        </footer>
+        
     </div>
 
     <environment names="Development">
@@ -148,4 +147,9 @@
     <script src="~/lib/dataTablesScripts/jquery.dataTables.min.js"></script>
     <script src="~/lib/dataTablesScripts/dataTables.bootstrap4.min.js"></script>
 </body>
+<footer>
+    <a id="developer">Developed by -  </a>
+    <a id="copyright">Copyright © 2022 . All rights reserved.</a>
+
+</footer>
 </html>

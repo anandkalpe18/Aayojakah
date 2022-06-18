@@ -6,117 +6,162 @@
    
     <title>Register</title>
 </head>
-<div class="container">
-    <br />
-    <div class="panel-heading">Register</div>
-    <div class="panel panel-default">
 
-        <div class="panel-body">
+<div>
+    <nav class="navbar navbar-inverse navbar-fixed-top" style="background-color:#151b54">
+        <div class="container">
+            <div class="navbar-header">
+                <a class="navbar-brand" href="#"><img src="~/My project (4).png" class="img-responsive logo" /></a>
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
 
-            @if (TempData["MessageRegistration"] != null)
-            {
-<p class="alert alert-success" id="successMessage">@TempData["MessageRegistration"] <a class="btn btn-success" href="/Login/Login">Go To Sign in </a></p>            }
-            @Html.ValidationSummary()
-            @Html.ValidationSummary(true)
+            </div>
+
+            <div class="navbar-collapse collapse">
+
+                <ul class="nav navbar-nav">
+                    <li class="home"><a class="b1" asp-action="Index" asp-controller="Home">Home</a></li>
+                    <li class="home"><a>About Us</a></li>
+                    <li class="home"><a>Contact Us</a></li>
+                    <li class="home"><a asp-controller="Login" asp-action="Login">Login</a></li>
+
+
+                </ul>
+            </div>
+        </div>
+    </nav>
+</div>
+
+<div class="wrapper">
+    
+    <div class="logo1">
+        <center><img src="~/My project (4).png" alt=""></center>
+    </div>
+        
+    <div class="container">
+        <br />
+        <div class="panel-heading" style="margin-right:10%">Register</div>
+        <div class="panel panel-default">
+
+            <div class="panel-body">
+
+                @if (TempData["MessageRegistration"] != null)
+                {
+                    <p class="alert alert-success" id="successMessage">@TempData["MessageRegistration"] <a class="btn btn-success" href="/Login/Login">Go To Sign in </a></p>}
+                @Html.ValidationSummary()
+                @Html.ValidationSummary(true)
+
             <form method="post" asp-controller="Registration" asp-action="Registration">
-                <div class="row">
-                    <div class="col-lg-4">
-                        <label class="control-label" asp-for="Name">Name</label>
-                        <input asp-for="Name" type="text" class="form-control" />
-                        <span asp-validation-for="Name" class="text-danger"></span>
+                <div class="form-field d-flex align-items-center">
+                    <div class="row">
+                        <div class="col-lg-4">
+                            <label class="control-label" asp-for="Name">Name</label>
+                            <input asp-for="Name" type="text" class="form-control" />
+                            <span asp-validation-for="Name" class="text-danger"></span>
+                        </div>
+                        <div class="col-lg-4">
+                            <label class="control-label" asp-for="Mobileno">Contact No</label>
+                            <input asp-for="Mobileno" maxlength="10" name="Mobileno" onkeydown="return OnlyNumeric(this);" type="text" class="form-control" />
+                            <span asp-validation-for="Mobileno" class="text-danger"></span>
+                        </div>
+                        <div class="col-lg-4">
+                            <label class="control-label" asp-for="Address">Address</label>
+                            <input asp-for="Address" type="text" class="form-control" />
+                            <span asp-validation-for="Address" class="text-danger"></span>
+                        </div>
                     </div>
-                    <div class="col-lg-4">
-                        <label class="control-label" asp-for="Mobileno">Contact No</label>
-                        <input asp-for="Mobileno" maxlength="10" name="Mobileno" onkeydown="return OnlyNumeric(this);" type="text" class="form-control" />
-                        <span asp-validation-for="Mobileno" class="text-danger"></span>
+
+                    <div class="row">
+                        <div class="col-lg-4">
+                            <label class="control-label" asp-for="EmailID">EmailID</label>
+                            <input asp-for="EmailID" type="text" class="form-control" />
+                            <span asp-validation-for="EmailID" class="text-danger"></span>
+                        </div>
+                        <div class="col-lg-4">
+
+                            <label class="control-label" asp-for="Gender">Gender</label>
+                            <br />
+                            <input asp-for="Gender" type="radio" value="M" /> @Html.Label("", " Male")
+                            <input asp-for="Gender" type="radio" value="F" />@Html.Label("", " Female")
+                            <br />
+                            <span asp-validation-for="Gender" class="text-danger"></span>
+                        </div>
+
+                        <div class="col-lg-4">
+                            <label class="control-label" asp-for="Country">Country</label>
+                            <select asp-for="Country"
+                                    class="form-control"
+                                    asp-items="@(new SelectList(string.Empty,"CountryID", "Name"))"></select>
+                            <span asp-validation-for="Country" class="text-danger"></span>
+                        </div>
+
                     </div>
-                    <div class="col-lg-4">
-                        <label class="control-label" asp-for="Address">Address</label>
-                        <input asp-for="Address" type="text" class="form-control" />
-                        <span asp-validation-for="Address" class="text-danger"></span>
+
+                    <div class="row">
+                        <div class="col-lg-4">
+                            <label class="control-label" asp-for="State">State</label>
+                            <select asp-for="State" class="form-control"
+                                    asp-items="@(new SelectList(string.Empty,"StateID", "StateName"))"></select>
+                            <span asp-validation-for="State" class="text-danger"></span>
+                        </div>
+                        <div class="col-lg-4">
+                            <label class="control-label" asp-for="City">City</label>
+                            <select asp-for="City" class="form-control"
+                                    asp-items="@(new SelectList(string.Empty,"CityID", "CityName"))"></select>
+                            <span asp-validation-for="City" class="text-danger"></span>
+                        </div>
+                        <div class="col-lg-4">
+                            <label class="control-label" asp-for="Birthdate">Birthdate</label>
+                            <input asp-for="Birthdate" id="Birthdate" type="text" class="form-control" />
+                            <span asp-validation-for="Birthdate" class="text-danger"></span>
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <div class="col-lg-4">
+                            <label class="control-label" asp-for="Username">Username</label>
+                            <input asp-for="Username" onblur="CheckUsernameExists();" type="text" class="form-control" />
+                            <span asp-validation-for="Username" class="text-danger"></span>
+                        </div>
+                        <div class="col-lg-4">
+                            <label class="control-label" asp-for="Password">Password</label>
+                            <input asp-for="Password" type="password" class="form-control" />
+                            <span asp-validation-for="Password" class="text-danger"></span>
+                        </div>
+                        <div class="col-lg-4">
+                            <label class="control-label" asp-for="ConfirmPassword">ConfirmPassword</label>
+                            <input asp-for="ConfirmPassword" type="password" class="form-control" />
+                            <span asp-validation-for="ConfirmPassword" class="text-danger"></span>
+                        </div>
                     </div>
                 </div>
-
-                <div class="row">
-                    <div class="col-lg-4">
-                        <label class="control-label" asp-for="EmailID">EmailID</label>
-                        <input asp-for="EmailID" type="text" class="form-control" />
-                        <span asp-validation-for="EmailID" class="text-danger"></span>
-                    </div>
-                    <div class="col-lg-4">
-
-                        <label class="control-label" asp-for="Gender">Gender</label>
-                        <br />
-                        <input asp-for="Gender" type="radio" value="M" /> @Html.Label("", " Male")
-                        <input asp-for="Gender" type="radio" value="F" />@Html.Label("", " Female")
-                        <br />
-                        <span asp-validation-for="Gender" class="text-danger"></span>
-                    </div>
-
-                    <div class="col-lg-4">
-                        <label class="control-label" asp-for="Country">Country</label>
-                        <select asp-for="Country"
-                                class="form-control"
-                                asp-items="@(new SelectList(string.Empty,"CountryID", "Name"))"></select>
-                        <span asp-validation-for="Country" class="text-danger"></span>
-                    </div>
-
-                </div>
-
-                <div class="row">
-                    <div class="col-lg-4">
-                        <label class="control-label" asp-for="State">State</label>
-                        <select asp-for="State" class="form-control"
-                                asp-items="@(new SelectList(string.Empty,"StateID", "StateName"))"></select>
-                        <span asp-validation-for="State" class="text-danger"></span>
-                    </div>
-                    <div class="col-lg-4">
-                        <label class="control-label" asp-for="City">City</label>
-                        <select asp-for="City" class="form-control"
-                                asp-items="@(new SelectList(string.Empty,"CityID", "CityName"))"></select>
-                        <span asp-validation-for="City" class="text-danger"></span>
-                    </div>
-                    <div class="col-lg-4">
-                        <label class="control-label" asp-for="Birthdate">Birthdate</label>
-                        <input asp-for="Birthdate" id="Birthdate" type="text" class="form-control" />
-                        <span asp-validation-for="Birthdate" class="text-danger"></span>
-                    </div>
-                </div>
-
-                <div class="row">
-                    <div class="col-lg-4">
-                        <label class="control-label" asp-for="Username">Username</label>
-                        <input asp-for="Username" onblur="CheckUsernameExists();" type="text" class="form-control" />
-                        <span asp-validation-for="Username" class="text-danger"></span>
-                    </div>
-                    <div class="col-lg-4">
-                        <label class="control-label" asp-for="Password">Password</label>
-                        <input asp-for="Password" type="password" class="form-control" />
-                        <span asp-validation-for="Password" class="text-danger"></span>
-                    </div>
-                    <div class="col-lg-4">
-                        <label class="control-label" asp-for="ConfirmPassword">ConfirmPassword</label>
-                        <input asp-for="ConfirmPassword" type="password" class="form-control" />
-                        <span asp-validation-for="ConfirmPassword" class="text-danger"></span>
-                    </div>
-                </div>
-
                 <div class="row">
                     <div class="col-lg-4">
                         <br />
                         <input id="Submit1" type="submit" class="btn btn-primary" value="Register" />
-                        <a class="btn btn-success" href="/Login/Login">Login</a>
+                        
+                        
+
                     </div>
 
 
+
                 </div>
+                
+
             </form>
+            </div>
 
 
         </div>
     </div>
 
 </div>
+        
 
 <script type="text/javascript">
     $(document).ready(function ()
