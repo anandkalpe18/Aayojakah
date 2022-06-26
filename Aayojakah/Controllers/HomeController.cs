@@ -14,22 +14,27 @@ namespace Aayojakah.Controllers
         {
             return View();
         }
-
         public IActionResult About()
         {
-            ViewData["Message"] = "Your application description page.";
-
             return View();
         }
-
+        public IActionResult Services()
+        {
+            return View();
+        }
+        public IActionResult Team()
+        {
+            return View();
+        }
         public IActionResult Contact()
         {
-            ViewData["Message"] = "Your contact page.";
-
             return View();
         }
-
-        public IActionResult Error()
+        public IActionResult Portfolio()
+        {
+            return View();
+        }
+        public IActionResult PortfolioDetails()
         {
             return View();
         }
