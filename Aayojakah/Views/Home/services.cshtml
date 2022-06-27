@@ -10,12 +10,12 @@
     <meta charset="utf-8">
     <meta content="width=device-width, initial-scale=1.0" name="viewport">
 
-    <title>Nova Bootstrap Template - Services</title>
+    <title>Services</title>
     <meta content="" name="description">
     <meta content="" name="keywords">
 
     <!-- Favicons -->
-    <link href="~/assets/img/favicon.png" rel="icon">
+    <link href="~/ProjectLogo (1).png" rel="icon">
     <link href="~/assets/img/apple-touch-icon.png" rel="apple-touch-icon">
 
     <!-- Google Fonts -->
@@ -51,7 +51,7 @@
             <a asp-controller="Home" asp-action="Index" class="logo d-flex align-items-center">
                 <!-- Uncomment the line below if you also wish to use an image logo -->
                 <!-- <img src="~/assets/img/logo.png" alt=""> -->
-                <h1 class="d-flex align-items-center">Nova</h1>
+                <h1 class="d-flex align-items-center" style="font-family:'Baskerville Old Face'">Aayojakah - The Organizers</h1>
             </a>
 
             <i class="mobile-nav-toggle mobile-nav-show bi bi-list"></i>
@@ -67,8 +67,8 @@
                     <li><a asp-controller="Home" asp-action="Contact">Contact</a></li>
                     <li><a asp-controller="Login" asp-action="Login">Login</a></li>
                     <li><a asp-controller="Registration" asp-action="Registration">Sign up</a></li>
-</ul>
-</nav><!-- .navbar -->
+                </ul>
+            </nav><!-- .navbar -->
 
         </div>
     </header><!-- End Header -->
@@ -81,7 +81,7 @@
 
                 <h2>Services</h2>
                 <ol>
-                    <li><a href="index.html">Home</a></li>
+                    <li><a asp-controller="Home" asp-action="Index">Home</a></li>
                     <li>Services</li>
                 </ol>
 
@@ -99,51 +99,68 @@
                 <div class="row gy-5">
 
                     <div class="col-lg-4 col-md-6 service-item d-flex" data-aos="fade-up" data-aos-delay="100">
-                        <div class="icon flex-shrink-0"><i class="bi bi-briefcase" style="color: #f57813;"></i></div>
+                        <div class="icon flex-shrink-0"><i class="bi bi-arrow-through-heart-fill"></i></div>
                         <div>
-                            <h4 class="title"><a href="#" class="stretched-link">Lorem Ipsum</a></h4>
-                            <p class="description">Voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident</p>
+                            <h4 class="title"><a href="#" class="stretched-link">Wedding</a></h4>
+                            <p class="description">
+                                Wedding is the most important time of the life for you, it brings a lot of responsibilities and stress as well.
+                                There are tons of things that you have to worry about.
+                                The location,  the theme, bride’s makeover, apparel, catering, decorations, wedding favors and much more adds to the list.
+                            </p>
                         </div>
                     </div>
                     <!-- End Service Item -->
 
                     <div class="col-lg-4 col-md-6 service-item d-flex" data-aos="fade-up" data-aos-delay="200">
-                        <div class="icon flex-shrink-0"><i class="bi bi-card-checklist" style="color: #15a04a;"></i></div>
+                        <div class="icon flex-shrink-0"><i class="bi bi-balloon"></i></div>
                         <div>
-                            <h4 class="title"><a href="#" class="stretched-link">Dolor Sitema</a></h4>
-                            <p class="description">Minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat tarad limino ata</p>
+                            <h4 class="title"><a href="#" class="stretched-link">Birthday</a></h4>
+                            <p class="description">
+                                Planning a birthday party can be a very exciting task.
+                                You are focused on finding the perfect spot for the party and you are in charge of inviting all of the guests.
+                                Not to mention, you are trying to do everything within a budget.
+                            </p>
                         </div>
                     </div><!-- End Service Item -->
 
                     <div class="col-lg-4 col-md-6 service-item d-flex" data-aos="fade-up" data-aos-delay="300">
-                        <div class="icon flex-shrink-0"><i class="bi bi-bar-chart" style="color: #d90769;"></i></div>
+                        <div class="icon flex-shrink-0"><i class="bi bi-people"></i></div>
                         <div>
-                            <h4 class="title"><a href="#" class="stretched-link">Sed ut perspiciatis</a></h4>
+                            <h4 class="title"><a href="#" class="stretched-link">Family Function</a></h4>
                             <p class="description">Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur</p>
                         </div>
                     </div><!-- End Service Item -->
 
                     <div class="col-lg-4 col-md-6 service-item d-flex" data-aos="fade-up" data-aos-delay="400">
-                        <div class="icon flex-shrink-0"><i class="bi bi-binoculars" style="color: #15bfbc;"></i></div>
+                        <div class="icon flex-shrink-0"><i class="bi bi-person-hearts"></i></div>
                         <div>
-                            <h4 class="title"><a href="#" class="stretched-link">Magni Dolores</a></h4>
-                            <p class="description">Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum</p>
+                            <h4 class="title"><a href="#" class="stretched-link">Farewell</a></h4>
+                            <p class="description">
+                                A farewell party is held for many occasions, including when someone leaves work, leaves the country,
+                                or leaves an activity that they have been a part for a long time. Plan the event to give them best farewell...
+                            </p>
                         </div>
                     </div><!-- End Service Item -->
 
                     <div class="col-lg-4 col-md-6 service-item d-flex" data-aos="fade-up" data-aos-delay="500">
-                        <div class="icon flex-shrink-0"><i class="bi bi-brightness-high" style="color: #f5cf13;"></i></div>
+                        <div class="icon flex-shrink-0"><i class="bi bi-rainbow"></i></div>
                         <div>
-                            <h4 class="title"><a href="#" class="stretched-link">Nemo Enim</a></h4>
-                            <p class="description">At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque</p>
+                            <h4 class="title"><a href="#" class="stretched-link">College Fest</a></h4>
+                            <p class="description">
+                                College fest is an annual cultural event at a college or university organized by the student community with the support of their Faculties,
+                                Principal and Management.
+                            </p>
                         </div>
                     </div><!-- End Service Item -->
 
                     <div class="col-lg-4 col-md-6 service-item d-flex" data-aos="fade-up" data-aos-delay="600">
-                        <div class="icon flex-shrink-0"><i class="bi bi-calendar4-week" style="color: #1335f5;"></i></div>
+                        <div class="icon flex-shrink-0"><i class="bi bi-person-workspace"></i></div>
                         <div>
-                            <h4 class="title"><a href="#" class="stretched-link">Eiusmod Tempor</a></h4>
-                            <p class="description">Et harum quidem rerum facilis est et expedita distinctio. Nam libero tempore, cum soluta nobis est eligendi</p>
+                            <h4 class="title"><a href="#" class="stretched-link">Corporate Events</a></h4>
+                            <p class="description">
+                                Events in a corporate environment are often staged to communicate company strategy, change internal company behavior,
+                                launch a product or service, motivate, train or reward staff, or influence the external behavior of customers towards the brand.
+                            </p>
                         </div>
                     </div><!-- End Service Item -->
 
@@ -165,8 +182,12 @@
                                 </div>
                                 <div class="col-xl-7 d-flex align-items-center">
                                     <div class="card-body">
-                                        <h4 class="card-title">Eligendi omnis sunt veritatis.</h4>
-                                        <p>Fuga in dolorum et iste et culpa. Commodi possimus nesciunt modi voluptatem placeat deleniti adipisci. Cum delectus doloribus non veritatis. Officia temporibus illo magnam. Dolor eos et.</p>
+                                        <h4 class="card-title">Effortless Elegance</h4>
+                                        <p>
+                                            We create bespoke weddings and events that are inspired by our clients.
+                                            We work collaboratively to ensure your event is cohesive and thoughtful.
+                                            At Brilliant Event Planning, we believe that even the smallest details can have a huge impact.
+                                        </p>
                                     </div>
                                 </div>
                             </div>
@@ -177,12 +198,16 @@
                         <div class="card-item">
                             <div class="row">
                                 <div class="col-xl-5">
-                                    <div class="card-bg" style="background-image: url(~/assets/img/cards-2.jpg);"></div>
+                                    <div class="card-bg" style="background: url(~/assets/img/cards-2.jpg);"></div>
                                 </div>
                                 <div class="col-xl-7 d-flex align-items-center">
                                     <div class="card-body">
-                                        <h4 class="card-title">Possimus ut sed velit assumenda</h4>
-                                        <p>Sunt deserunt maiores voluptatem autem est rerum perferendis rerum blanditiis. Est laboriosam qui iste numquam laboriosam voluptatem architecto. Est laudantium sunt at quas aut hic. Eum dignissimos.</p>
+                                        <h4 class="card-title">Award Winning Team</h4>
+                                        <p>
+                                            We are creatives backed by experienced event planning teams.
+                                            We always ensure that each client receives the highest level of service and attention.
+                                            At Brilliant Event Planning, we’re dedicated to producing not only a spectacular event, but the foundation for memories that will last a lifetime.
+                                        </p>
                                     </div>
                                 </div>
                             </div>
@@ -197,8 +222,12 @@
                                 </div>
                                 <div class="col-xl-7 d-flex align-items-center">
                                     <div class="card-body">
-                                        <h4 class="card-title">Error beatae dolor inventore aut</h4>
-                                        <p>Dicta porro nobis. Velit cum in. Nesciunt dignissimos enim molestiae facilis numquam quae quaerat ipsam omnis. Neque debitis ipsum at architecto officia laboriosam odit. Ut sunt temporibus nulla culpa.</p>
+                                        <h4 class="card-title">Personal touches</h4>
+                                        <p>
+                                            You don’t only want a beautiful event, you want it to be YOUR beautiful event.
+                                            We believe that behind every event is a story.
+                                            So, whether it’s a bespoke escort card display or creative ways to make each guest feel included, we’re here to help you tell your story.
+                                        </p>
                                     </div>
                                 </div>
                             </div>
@@ -213,8 +242,11 @@
                                 </div>
                                 <div class="col-xl-7 d-flex align-items-center">
                                     <div class="card-body">
-                                        <h4 class="card-title">Expedita voluptas ut ut nesciunt</h4>
-                                        <p>Aut est quidem doloremque voluptatem magnam quis excepturi vero quia. Eum eos doloremque architecto illo at beatae dolore. Fugiat suscipit et sint ratione dolores. Aut aliquid ea dolores libero nobis.</p>
+                                        <h4 class="card-title">Flawless Execution</h4>
+                                        <p>
+                                            We specialize in planning and designing weddings and events in private homes and raw spaces. We pride ourselves on flawless execution with high level touches.
+                                            Weekend affairs, multiple days of tent installation, ferries and travel logistics are a typical day at the office.
+                                        </p>
                                     </div>
                                 </div>
                             </div>
@@ -333,14 +365,19 @@
                 <div class="row gy-4">
                     <div class="col-lg-5 col-md-12 footer-info">
                         <a href="index.html" class="logo d-flex align-items-center">
-                            <span>Nova</span>
+                            <span>Aayojaka: ~ The Organizers</span>
                         </a>
-                        <p>Cras fermentum odio eu feugiat lide par naso tierra. Justo eget nada terra videa magna derita valies darta donna mare fermentum iaculis eu non diam phasellus.</p>
+                        <p>
+                            <br />
+                            Ayojakaha is a bright, colorful & stylish Event Planning website with a festive and elegant design.
+                            It is made to organize Professional as well as Functional events.
+
+                        </p>
                         <div class="social-links d-flex  mt-3">
-                            <a href="#" class="twitter"><i class="bi bi-twitter"></i></a>
-                            <a href="#" class="facebook"><i class="bi bi-facebook"></i></a>
-                            <a href="#" class="instagram"><i class="bi bi-instagram"></i></a>
-                            <a href="#" class="linkedin"><i class="bi bi-linkedin"></i></a>
+                            <a href="https://twitter.com/" class="twitter"><i class="bi bi-twitter"></i></a>
+                            <a href="https://www.facebook.com/" class="facebook"><i class="bi bi-facebook"></i></a>
+                            <a href="https://www.instagram.com/" class="instagram"><i class="bi bi-instagram"></i></a>
+                            <a href="https://www.linkedin.com/" class="linkedin"><i class="bi bi-linkedin"></i></a>
                         </div>
                     </div>
 
@@ -350,30 +387,34 @@
                             <li><i class="bi bi-dash"></i> <a href="#">Home</a></li>
                             <li><i class="bi bi-dash"></i> <a href="#">About us</a></li>
                             <li><i class="bi bi-dash"></i> <a href="#">Services</a></li>
-                            <li><i class="bi bi-dash"></i> <a href="#">Terms of service</a></li>
-                            <li><i class="bi bi-dash"></i> <a href="#">Privacy policy</a></li>
+                            <li><i class="bi bi-dash"></i> <a href="#">Portfolio</a></li>
+                            <li><i class="bi bi-dash"></i> <a href="#">Team</a></li>
+                            <li><i class="bi bi-dash"></i> <a href="#">Contact us</a></li>
+
+
                         </ul>
                     </div>
 
                     <div class="col-lg-2 col-6 footer-links">
                         <h4>Our Services</h4>
                         <ul>
-                            <li><i class="bi bi-dash"></i> <a href="#">Web Design</a></li>
-                            <li><i class="bi bi-dash"></i> <a href="#">Web Development</a></li>
-                            <li><i class="bi bi-dash"></i> <a href="#">Product Management</a></li>
-                            <li><i class="bi bi-dash"></i> <a href="#">Marketing</a></li>
-                            <li><i class="bi bi-dash"></i> <a href="#">Graphic Design</a></li>
+                            <li><i class="bi bi-dash"></i> <a href="#">Wedding Ceremony </a></li>
+                            <li><i class="bi bi-dash"></i> <a href="#">Birthday Celebration </a></li>
+                            <li><i class="bi bi-dash"></i> <a href="#">Family Function</a></li>
+                            <li><i class="bi bi-dash"></i> <a href="#">Farewell Party</a></li>
+                            <li><i class="bi bi-dash"></i> <a href="#">College Fest</a></li>
+                            <li><i class="bi bi-dash"></i> <a href="#">Corporate Events</a></li>
                         </ul>
                     </div>
 
                     <div class="col-lg-3 col-md-12 footer-contact text-center text-md-start">
                         <h4>Contact Us</h4>
                         <p>
-                            A108 Adam Street <br>
-                            New York, NY 535022<br>
-                            United States <br><br>
+                            Plot No 26, Rajiv Gandhi Infotech Park, <br>
+                            Hinjawadi, Pune - 411057.<br>
+                            India <br><br>
                             <strong>Phone:</strong> +1 5589 55488 55<br>
-                            <strong>Email:</strong> info@example.com<br>
+                            <strong>Email:</strong> www.cognizant.com<br>
                         </p>
 
                     </div>
@@ -385,15 +426,9 @@
         <div class="footer-legal">
             <div class="container">
                 <div class="copyright">
-                    &copy; Copyright <strong><span>Nova</span></strong>. All Rights Reserved
+                    &copy; Copyright <strong><span>Aayojakah</span></strong>. All Rights Reserved
                 </div>
-                <div class="credits">
-                    <!-- All the links in the footer should remain intact. -->
-                    <!-- You can delete the links only if you purchased the pro version. -->
-                    <!-- Licensing information: https://bootstrapmade.com/license/ -->
-                    <!-- Purchase the pro version with working PHP/AJAX contact form: https://bootstrapmade.com/nova-bootstrap-business-template/ -->
-                    Designed by <a href="https://bootstrapmade.com/">BootstrapMade</a>
-                </div>
+
             </div>
         </div>
     </footer><!-- End Footer -->
