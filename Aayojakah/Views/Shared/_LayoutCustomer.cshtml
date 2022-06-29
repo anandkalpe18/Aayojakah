@@ -4,7 +4,7 @@
 <html>
 <head>
     <link rel="shortcut icon" href="~/ProjectLogo (1).png">
-    <style>
+    @*<style>
         .container {
             min-height:calc(100vh-200px-40px);
         }
@@ -36,7 +36,7 @@
     </style>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>@ViewData["Title"] Dashboard - @Context.Session.GetString("Username") </title>
+    <title>@ViewData["Title"] Dashboard - @Context.Session.GetString("Username") </title>*@
 
     <meta charset="utf-8">
     <meta content="width=device-width, initial-scale=1.0" name="viewport">
@@ -150,81 +150,80 @@
     </div>
     @RenderBody()
 
-    <footer id="footer" class="footer" style="margin-top:30px;">
+<footer id="footer" class="footer" style="margin-top:30px;">
 
-        <div class="footer-content">
-            <div class="container">
-                <div class="row gy-4">
-                    <div class="col-lg-5 col-md-12 footer-info">
-                        <a href="index.html" class="logo d-flex align-items-center">
-                            <span>Aayojaka: ~ The Organizers</span>
-                        </a>
-                        <p>
-                            <br />
-                            Ayojakaha is a bright, colorful & stylish Event Planning website with a festive and elegant design.
-                            It is made to organize Professional as well as Functional events.
+    <div class="footer-content">
+        <div class="container">
+            <div class="row gy-4">
+                <div class="col-lg-5 col-md-12 footer-info">
+                    <a href="index.html" class="logo d-flex align-items-center">
+                        <span>Aayojaka: ~ The Organizers</span>
+                    </a>
+                    <p>
+                        <br />
+                        Ayojakaha is a bright, colorful & stylish Event Planning website with a festive and elegant design.
+                        It is made to organize Professional as well as Functional events.
 
-                        </p>
-                        <div class="social-links d-flex  mt-3">
-                            <a href="https://twitter.com/" class="twitter"><i class="bi bi-twitter"></i></a>
-                            <a href="https://www.facebook.com/" class="facebook"><i class="bi bi-facebook"></i></a>
-                            <a href="https://www.instagram.com/" class="instagram"><i class="bi bi-instagram"></i></a>
-                            <a href="https://www.linkedin.com/" class="linkedin"><i class="bi bi-linkedin"></i></a>
-                        </div>
+                    </p>
+                    <div class="social-links d-flex  mt-3">
+                        <a href="https://twitter.com/" class="twitter"><i class="bi bi-twitter"></i></a>
+                        <a href="https://www.facebook.com/" class="facebook"><i class="bi bi-facebook"></i></a>
+                        <a href="https://www.instagram.com/" class="instagram"><i class="bi bi-instagram"></i></a>
+                        <a href="https://www.linkedin.com/" class="linkedin"><i class="bi bi-linkedin"></i></a>
                     </div>
-
-                    <div class="col-lg-2 col-6 footer-links">
-                        <h4>Useful Links</h4>
-                        <ul>
-                            <li><i class="bi bi-dash"></i> <a href="#">Home</a></li>
-                            <li><i class="bi bi-dash"></i> <a href="#">About us</a></li>
-                            <li><i class="bi bi-dash"></i> <a href="#">Services</a></li>
-                            <li><i class="bi bi-dash"></i> <a href="#">Portfolio</a></li>
-                            <li><i class="bi bi-dash"></i> <a href="#">Team</a></li>
-                            <li><i class="bi bi-dash"></i> <a href="#">Contact us</a></li>
-
-
-                        </ul>
-                    </div>
-
-                    <div class="col-lg-2 col-6 footer-links">
-                        <h4>Our Services</h4>
-                        <ul>
-                            <li><i class="bi bi-dash"></i> <a href="#">Wedding Ceremony </a></li>
-                            <li><i class="bi bi-dash"></i> <a href="#">Birthday Celebration </a></li>
-                            <li><i class="bi bi-dash"></i> <a href="#">Family Function</a></li>
-                            <li><i class="bi bi-dash"></i> <a href="#">Farewell Party</a></li>
-                            <li><i class="bi bi-dash"></i> <a href="#">College Fest</a></li>
-                            <li><i class="bi bi-dash"></i> <a href="#">Corporate Events</a></li>
-                        </ul>
-                    </div>
-
-                    <div class="col-lg-3 col-md-12 footer-contact text-center text-md-start">
-                        <h4>Contact Us</h4>
-                        <p>
-                            Plot No 26, Rajiv Gandhi Infotech Park, <br>
-                            Hinjawadi, Pune - 411057.<br>
-                            India <br><br>
-                            <strong>Phone:</strong> +1 5589 55488 55<br>
-                            <strong>Email:</strong> www.cognizant.com<br>
-                        </p>
-
-                    </div>
-
                 </div>
-            </div>
-        </div>
 
-        <div class="footer-legal">
-            <div class="container">
-                <div class="copyright">
-                    &copy; Copyright <strong><span>Aayojakah</span></strong>. All Rights Reserved
+                <div class="col-lg-2 col-6 footer-links">
+                    <h4>Useful Links</h4>
+                    <ul>
+                        <li><i class="bi bi-dash"></i> <a href="#">Home</a></li>
+                        <li><i class="bi bi-dash"></i> <a href="#">About us</a></li>
+                        <li><i class="bi bi-dash"></i> <a href="#">Services</a></li>
+                        <li><i class="bi bi-dash"></i> <a href="#">Portfolio</a></li>
+                        <li><i class="bi bi-dash"></i> <a href="#">Team</a></li>
+                        <li><i class="bi bi-dash"></i> <a href="#">Contact us</a></li>
+
+
+                    </ul>
+                </div>
+
+                <div class="col-lg-2 col-6 footer-links">
+                    <h4>Our Services</h4>
+                    <ul>
+                        <li><i class="bi bi-dash"></i> <a href="#">Wedding Ceremony </a></li>
+                        <li><i class="bi bi-dash"></i> <a href="#">Birthday Celebration </a></li>
+                        <li><i class="bi bi-dash"></i> <a href="#">Family Function</a></li>
+                        <li><i class="bi bi-dash"></i> <a href="#">Farewell Party</a></li>
+                        <li><i class="bi bi-dash"></i> <a href="#">College Fest</a></li>
+                        <li><i class="bi bi-dash"></i> <a href="#">Corporate Events</a></li>
+                    </ul>
+                </div>
+
+                <div class="col-lg-3 col-md-12 footer-contact text-center text-md-start">
+                    <h4>Contact Us</h4>
+                    <p>
+                        Plot No 26, Rajiv Gandhi Infotech Park, <br>
+                        Hinjawadi, Pune - 411057.<br>
+                        India <br><br>
+                        <strong>Phone:</strong> +1 5589 55488 55<br>
+                        <strong>Email:</strong> www.cognizant.com<br>
+                    </p>
+
                 </div>
 
             </div>
         </div>
-    </footer>
+    </div>
 
+    <div class="footer-legal">
+        <div class="container">
+            <div class="copyright">
+                &copy; Copyright <strong><span>Aayojakah</span></strong>. All Rights Reserved
+            </div>
+
+        </div>
+    </div>
+</footer>
     <!-- Vendor JS Files -->
     <script src="~/assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
     <script src="~/assets/vendor/aos/aos.js"></script>
@@ -244,7 +243,7 @@
         <script src="~/lib/datetimepicker/jqueryui.js"></script>
     </environment>
 
-    <environment names="Staging,Production">
+    @*<environment names="Staging,Production">
         <script src="https://ajax.aspnetcdn.com/ajax/jquery/jquery-2.2.0.min.js"
                 asp-fallback-src="~/lib/jquery/dist/jquery.min.js"
                 asp-fallback-test="window.jQuery"
@@ -258,7 +257,7 @@
                 integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa">
         </script>
         <script src="~/js/site.min.js" asp-append-version="true"></script>
-    </environment>
+    </environment>*@
 
     @RenderSection("Scripts", required: false)
 
