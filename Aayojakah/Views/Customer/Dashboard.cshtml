@@ -1,3 +1,283 @@
-﻿@{ 
+﻿@{
     Layout = "~/Views/Shared/_LayoutCustomer.cshtml";
 }
+<head>
+    <link href="~/css/Dashboard.Css" rel="stylesheet">
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" />
+</head>
+<main>
+
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-lg-12">
+                <div class="card" style="box-shadow:0px 0px 5px black">
+                    <div class="card-body">
+                        <h4 class="card-title mb-5">Booking Path</h4>
+
+                        <div class="hori-timeline" dir="ltr">
+                            <ul class="list-inline events">
+                                <li class="list-inline-item event-list">
+                                    <div class="px-4">
+                                        <div class="event-date bg-soft-primary text-primary">Book Event</div>
+                                        <h5 class="font-size-16">Check Availability</h5>
+                                        <p class="text-muted">Choose Venue, Dates, Event types, Guest count and check for availability on that particuclar day.</p>
+                                        <div>
+                                            <a asp-controller="Booking" asp-action="BookingVenue" class="btn btn-primary btn-sm">Book Event</a>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="list-inline-item event-list">
+                                    <div class="px-4">
+                                        <div class="event-date bg-soft-success text-success">Book Equipment</div>
+                                        <h5 class="font-size-16">Add Equipments</h5>
+                                        <p class="text-muted">Add Equipments by selecting them and continue for the next section.</p>
+                                        <div>
+                                            <a asp-controller="Booking" asp-action="BookingVenue" class="btn btn-primary btn-sm">Book Event</a>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="list-inline-item event-list">
+                                    <div class="px-4">
+                                        <div class="event-date bg-soft-danger text-danger">Book Food</div>
+                                        <h5 class="font-size-16">Add Food</h5>
+                                        <p class="text-muted">choose meal type, food type, dishes that you want to add and continue with next section</p>
+                                        <div>
+                                            <a asp-controller="Booking" asp-action="BookingVenue" class="btn btn-primary btn-sm">Book Event</a>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="list-inline-item event-list">
+                                    <div class="px-4">
+                                        <div class="event-date bg-soft-warning text-warning">Book decorative</div></div>
+                                        <h5 class="font-size-16">Add decoratives</h5>
+                                        <p class="text-muted">Choose the flowers and decoratives that you want to add in your day and continue with final booking.</p>
+                                        <div>
+                                            <a asp-controller="Booking" asp-action="BookingVenue" class="btn btn-primary btn-sm">Book Event</a>
+                                        </div>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <!-- end card -->
+            </div>
+        </div>
+
+    <section id="services-list" class="services-list">
+        <div class="container" data-aos="fade-up">
+
+            <div class="section-header">
+                <h2>Our Services</h2>
+
+            </div>
+
+            <div class="row gy-5">
+
+                <div class="col-lg-4 col-md-6 service-item d-flex" data-aos="fade-up" data-aos-delay="100">
+                    <div class="icon flex-shrink-0"><i class="bi bi-arrow-through-heart-fill"></i></div>
+                    <div>
+                        <h4 class="title"><a asp-controller="Home" asp-action="Portfolio" class="stretched-link">Wedding</a></h4>
+                        <p class="description">
+                            Wedding is the most important time of the life for you, it brings a lot of responsibilities and stress as well.
+                            There are tons of things that you have to worry about.
+                            The location,  the theme, bride’s makeover, apparel, catering, decorations, wedding favors and much more adds to the list.
+                        </p>
+                    </div>
+                </div>
+                <!-- End Service Item -->
+
+                <div class="col-lg-4 col-md-6 service-item d-flex" data-aos="fade-up" data-aos-delay="200">
+                    <div class="icon flex-shrink-0"><i class="bi bi-balloon"></i></div>
+                    <div>
+                        <h4 class="title"><a asp-controller="Home" asp-action="Portfolio" class="stretched-link">Birthday</a></h4>
+                        <p class="description">
+                            Planning a birthday party can be a very exciting task.
+                            You are focused on finding the perfect spot for the party and you are in charge of inviting all of the guests.
+                            Not to mention, you are trying to do everything within a budget.
+                        </p>
+                    </div>
+                </div><!-- End Service Item -->
+
+                <div class="col-lg-4 col-md-6 service-item d-flex" data-aos="fade-up" data-aos-delay="300">
+                    <div class="icon flex-shrink-0"><i class="bi bi-people"></i></div>
+                    <div>
+                        <h4 class="title"><a asp-controller="Home" asp-action="Portfolio" class="stretched-link">Family Function</a></h4>
+                        <p class="description">
+                            Family functions are all about finding beautiful curtains and hinding behind them.family makes function joyful.
+                            Small moments in family functions makes lifetime memories.They make family grow strong and together.
+                        </p>
+                    </div>
+                </div><!-- End Service Item -->
+
+                <div class="col-lg-4 col-md-6 service-item d-flex" data-aos="fade-up" data-aos-delay="400">
+                    <div class="icon flex-shrink-0"><i class="bi bi-person-hearts"></i></div>
+                    <div>
+                        <h4 class="title"><a asp-controller="Home" asp-action="Portfolio" class="stretched-link">Farewell</a></h4>
+                        <p class="description">
+                            A farewell party is held for many occasions, including when someone leaves work, leaves the country,
+                            or leaves an activity that they have been a part for a long time. Plan the event to give them best farewell...
+                        </p>
+                    </div>
+                </div><!-- End Service Item -->
+
+                <div class="col-lg-4 col-md-6 service-item d-flex" data-aos="fade-up" data-aos-delay="500">
+                    <div class="icon flex-shrink-0"><i class="bi bi-rainbow"></i></div>
+                    <div>
+                        <h4 class="title"><a asp-controller="Home" asp-action="Portfolio" class="stretched-link">College Fest</a></h4>
+                        <p class="description">
+                            College fest is an annual cultural event at a college or university organized by the student community with the support of their Faculties,
+                            Principal and Management.
+                        </p>
+                    </div>
+                </div><!-- End Service Item -->
+
+                <div class="col-lg-4 col-md-6 service-item d-flex" data-aos="fade-up" data-aos-delay="600">
+                    <div class="icon flex-shrink-0"><i class="bi bi-person-workspace"></i></div>
+                    <div>
+                        <h4 class="title"><a asp-controller="Home" asp-action="Portfolio" class="stretched-link">Corporate Events</a></h4>
+                        <p class="description">
+                            Events in a corporate environment are often staged to communicate company strategy, change internal company behavior,
+                            launch a product or service, motivate, train or reward staff, or influence the external behavior of customers towards the brand.
+                        </p>
+                    </div>
+                </div><!-- End Service Item -->
+
+            </div>
+
+        </div>
+    </section><!-- End Our Services Section -->
+
+    <section id="call-to-action" class="call-to-action">
+        <div class="container" data-aos="fade-up">
+            <div class="row justify-content-center">
+                <div class="col-lg-6 text-center">
+                    <h3>“People make events into stories. Stories give events meaning.”</h3>
+
+                    <a class="cta-btn" asp-controller="Home" asp-action="Portfolio">Portfolio</a>
+                </div>
+            </div>
+
+        </div>
+    </section><!-- End Call To Action Section -->
+
+
+
+    <section class="timeline_area section_padding_130" style="background-color:white">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-12 col-sm-8 col-lg-6">
+                    <!-- Section Heading-->
+                    <div class="section_header text-center">
+                        <h2>Our History</h2>
+                        <h3>A brief stories of our company journey</h3>
+                        <div class="line"></div>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-12">
+                    <!-- Timeline Area-->
+                    <div class="apland-timeline-area">
+                        <!-- Single Timeline Content-->
+                        <div class="single-timeline-area">
+                            <div class="timeline-date wow fadeInLeft" data-wow-delay="0.1s" style="visibility: visible; animation-delay: 0.1s; animation-name: fadeInLeft;">
+                                <p>Near Future</p>
+                            </div>
+                            <div class="row">
+                                <div class="col-12 col-md-6 col-lg-4">
+                                    <div class="single-timeline-content d-flex wow fadeInLeft" data-wow-delay="0.3s" style="visibility: visible; animation-delay: 0.3s; animation-name: fadeInLeft;">
+                                        <div class="timeline-icon"><i class="fa fa-address-card" aria-hidden="true"></i></div>
+                                        <div class="timeline-text">
+                                            <h6>Updated 5.0</h6>
+                                            <p>Fullyy Responsive Website.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-12 col-md-6 col-lg-4">
+                                    <div class="single-timeline-content d-flex wow fadeInLeft" data-wow-delay="0.5s" style="visibility: visible; animation-delay: 0.5s; animation-name: fadeInLeft;">
+                                        <div class="timeline-icon"><i class="fa fa-archive" aria-hidden="true"></i></div>
+                                        <div class="timeline-text">
+                                            <h6>Fixed bug</h6>
+                                            <p>Moved On from bugs and past mistakes.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-12 col-md-6 col-lg-4">
+                                    <div class="single-timeline-content d-flex wow fadeInLeft" data-wow-delay="0.7s" style="visibility: visible; animation-delay: 0.7s; animation-name: fadeInLeft;">
+                                        <div class="timeline-icon"><i class="fa fa-address-book" aria-hidden="true"></i></div>
+                                        <div class="timeline-text">
+                                            <h6>Organize 3k Events</h6>
+                                            <p>Moving to nearly 3500 Event Plannings and more to go.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Single Timeline Content-->
+                        <div class="single-timeline-area">
+                            <div class="timeline-date wow fadeInLeft" data-wow-delay="0.1s" style="visibility: visible; animation-delay: 0.1s; animation-name: fadeInLeft;">
+                                <p>2021</p>
+                            </div>
+                            <div class="row">
+                                <div class="col-12 col-md-6 col-lg-4">
+                                    <div class="single-timeline-content d-flex wow fadeInLeft" data-wow-delay="0.3s" style="visibility: visible; animation-delay: 0.3s; animation-name: fadeInLeft;">
+                                        <div class="timeline-icon"><i class="fa fa-briefcase" aria-hidden="true"></i></div>
+                                        <div class="timeline-text">
+                                            <h6>Connected 200+ Vendors</h6>
+                                            <p>We had connected our services with more than 200 vendors and still going on.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-12 col-md-6 col-lg-4">
+                                    <div class="single-timeline-content d-flex wow fadeInLeft" data-wow-delay="0.5s" style="visibility: visible; animation-delay: 0.5s; animation-name: fadeInLeft;">
+                                        <div class="timeline-icon"><i class="fa fa-desktop" aria-hidden="true"></i></div>
+                                        <div class="timeline-text">
+                                            <h6>30+ Branches</h6>
+                                            <p>We created 33 branches across all over India.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Single Timeline Content-->
+                        <div class="single-timeline-area">
+                            <div class="timeline-date wow fadeInLeft" data-wow-delay="0.1s" style="visibility: visible; animation-delay: 0.1s; animation-name: fadeInLeft;">
+                                <p>2020</p>
+                            </div>
+                            <div class="row">
+                                <div class="col-12 col-md-6 col-lg-4">
+                                    <div class="single-timeline-content d-flex wow fadeInLeft" data-wow-delay="0.3s" style="visibility: visible; animation-delay: 0.3s; animation-name: fadeInLeft;">
+                                        <div class="timeline-icon"><i class="fa fa-id-card" aria-hidden="true"></i></div>
+                                        <div class="timeline-text">
+                                            <h6>Lockdown Weddings</h6>
+                                            <p>Oraganized well prepared and sanitized safe weddings for customers.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-12 col-md-6 col-lg-4">
+                                    <div class="single-timeline-content d-flex wow fadeInLeft" data-wow-delay="0.5s" style="visibility: visible; animation-delay: 0.5s; animation-name: fadeInLeft;">
+                                        <div class="timeline-icon"><i class="fa fa-desktop" aria-hidden="true"></i></div>
+                                        <div class="timeline-text">
+                                            <h6>volunteers</h6>
+                                            <p>Recrutied more than 300 volunteers during lockdown .</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-12 col-md-6 col-lg-4">
+                                    <div class="single-timeline-content d-flex wow fadeInLeft" data-wow-delay="0.7s" style="visibility: visible; animation-delay: 0.7s; animation-name: fadeInLeft;">
+                                        <div class="timeline-icon"><i class="fa fa-picture-o" aria-hidden="true"></i></div>
+                                        <div class="timeline-text">
+                                            <h6>Reach 500 Users</h6>
+                                            <p>Reached to 500 Users and helped people in event organiazing during lockdown.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+</main>
