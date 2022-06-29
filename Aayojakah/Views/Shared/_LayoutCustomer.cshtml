@@ -4,6 +4,36 @@
 <html>
 <head>
     <link rel="shortcut icon" href="~/ProjectLogo (1).png">
+    <style>
+        .container {
+            min-height:calc(100vh-200px-40px);
+        }
+        footer {
+            background-color: #1C4E80;
+            font-family: Raleway;
+            color: antiquewhite;
+            padding-left: 13%;
+            padding-right: 15%;
+            position: fixed;
+            bottom: 0;
+            height: 40px;
+            left: 0;
+            width: 100%;
+            font-weight: 700;
+            padding-top: 10px;
+        }
+
+        #copyright {
+            color: antiquewhite;
+            text-align: right;
+            float: right;
+        }
+
+        #developer {
+            color: antiquewhite;
+            text-align: left;
+        }
+    </style>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>@ViewData["Title"] Dashboard - @Context.Session.GetString("Username") </title>

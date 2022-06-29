@@ -17,7 +17,7 @@
     <meta content="" name="keywords">
 
     <!-- Favicons -->
-    <link href="~/ProjectLogo (1).png" rel="icon">
+    <link href="~/Homepage images/phone.png" rel="icon">
     <link href="~/assets/img/apple-touch-icon.png" rel="apple-touch-icon">
 
     <!-- Google Fonts -->
@@ -36,12 +36,7 @@
     <!-- Template Main CSS File -->
     <link href="~/assets/css/main.css" rel="stylesheet">
 
-    <!-- =======================================================
-    * Template Name: Nova - v1.0.0
-    * Template URL: https://bootstrapmade.com/nova-bootstrap-business-template/
-    * Author: BootstrapMade.com
-    * License: https://bootstrapmade.com/license/
-    ======================================================== -->
+
 </head>
 
 <body class="page-contact">
@@ -62,11 +57,11 @@
             <nav id="navbar" class="navbar">
                 <ul>
                     <li><a asp-controller="Home" asp-action="Index" class="active">Home</a></li>
-                    <li><a asp-controller="Home" asp-action="About">About</a></li>
+                    <li><a asp-controller="Home" asp-action="About">About Us</a></li>
                     <li><a asp-controller="Home" asp-action="Services">Services</a></li>
                     <li><a asp-controller="Home" asp-action="Portfolio">Portfolio</a></li>
                     <li><a asp-controller="Home" asp-action="Team">Team</a></li>
-                    <li><a asp-controller="Home" asp-action="Contact">Contact</a></li>
+                    <li><a asp-controller="Home" asp-action="Contact">Contact Us</a></li>
                     <li><a asp-controller="Login" asp-action="Login">Login</a></li>
                     <li><a asp-controller="Registration" asp-action="Registration">Sign up</a></li>
                 </ul>
@@ -78,12 +73,12 @@
     <main id="main">
 
         <!-- ======= Breadcrumbs ======= -->
-        <div class="breadcrumbs d-flex align-items-center" style="background-image: url('~/assets/img/contact-header.jpg');">
+        <div class="breadcrumbs d-flex align-items-center">
             <div class="container position-relative d-flex flex-column align-items-center">
 
                 <h2>Login</h2>
                 <ol>
-                    <li><a asp-controller="Home" asp-action="Index" >Home</a></li>
+                    <li><a asp-controller="Home" asp-action="Index">Home</a></li>
                     <li>Login</li>
                 </ol>
 
@@ -103,11 +98,13 @@
                         <div class="container">
                             <div class="row">
                                 <div class="col-lg-10 col-xl-7 mx-auto">
-                                    <h3 class="display-4">Split page!</h3>
-                                    <p class="text-muted mb-4">Create a login split page using Bootstrap 4.</p>
+
+                                    @*<img src="~/Homepage images/My project.png" style="margin-bottom:50px; margin-left:-10px;" />*@
+                                    @*<h3 class="display-4" style="font-weight:700;padding:20px;">Login</h3>*@
+
                                     <form asp-controller="Login" asp-action="Login">
                                         <div class="form-group mb-3">
-                                            <input  placeholder="Username" required="" autofocus="" class="form-control rounded-pill border-0 shadow-sm px-4" asp-for="Username">
+                                            <input placeholder="Username" required="" autofocus="" class="form-control rounded-pill border-0 shadow-sm px-4" asp-for="Username">
                                             <span asp-validation-for="Username"></span>
                                         </div>
                                         <div class="form-group mb-3">
@@ -119,7 +116,7 @@
                                             <label for="customCheck1" class="custom-control-label">Remember password</label>
                                         </div>
                                         <button type="submit" class="btn btn-primary btn-block text-uppercase mb-2 rounded-pill shadow-sm">Sign in</button>
-                                        
+
                                     </form>
                                 </div>
                             </div>
@@ -140,7 +137,7 @@
                 <div class="row gy-4">
                     <div class="col-lg-5 col-md-12 footer-info">
                         <a href="index.html" class="logo d-flex align-items-center">
-                            <span>Aayojaka: ~ The Organizers</span>
+                            <span>Aayojakah</span>
                         </a>
                         <p>
                             <br />
@@ -159,26 +156,24 @@
                     <div class="col-lg-2 col-6 footer-links">
                         <h4>Useful Links</h4>
                         <ul>
-                            <li><i class="bi bi-dash"></i> <a href="#">Home</a></li>
-                            <li><i class="bi bi-dash"></i> <a href="#">About us</a></li>
-                            <li><i class="bi bi-dash"></i> <a href="#">Services</a></li>
-                            <li><i class="bi bi-dash"></i> <a href="#">Portfolio</a></li>
-                            <li><i class="bi bi-dash"></i> <a href="#">Team</a></li>
-                            <li><i class="bi bi-dash"></i> <a href="#">Contact us</a></li>
-
-
+                            <li><i class="bi bi-dash"></i> <a asp-controller="Home" asp-action="Index">Home</a></li>
+                            <li><i class="bi bi-dash"></i> <a asp-controller="Home" asp-action="About">About us</a></li>
+                            <li><i class="bi bi-dash"></i> <a asp-controller="Home" asp-action="Services">Services</a></li>
+                            <li><i class="bi bi-dash"></i> <a asp-controller="Home" asp-action="Portfolio">Portfolio</a></li>
+                            <li><i class="bi bi-dash"></i> <a asp-controller="Home" asp-action="Team">Team</a></li>
+                            <li><i class="bi bi-dash"></i> <a asp-controller="Home" asp-action="Contact">Contact us</a></li>
                         </ul>
                     </div>
 
                     <div class="col-lg-2 col-6 footer-links">
                         <h4>Our Services</h4>
                         <ul>
-                            <li><i class="bi bi-dash"></i> <a href="#">Wedding Ceremony </a></li>
-                            <li><i class="bi bi-dash"></i> <a href="#">Birthday Celebration </a></li>
-                            <li><i class="bi bi-dash"></i> <a href="#">Family Function</a></li>
-                            <li><i class="bi bi-dash"></i> <a href="#">Farewell Party</a></li>
-                            <li><i class="bi bi-dash"></i> <a href="#">College Fest</a></li>
-                            <li><i class="bi bi-dash"></i> <a href="#">Corporate Events</a></li>
+                            <li><i class="bi bi-dash"></i> <a asp-controller="Home" asp-action="Portfolio">Wedding Ceremony </a></li>
+                            <li><i class="bi bi-dash"></i> <a asp-controller="Home" asp-action="Portfolio">Birthday Celebration </a></li>
+                            <li><i class="bi bi-dash"></i> <a asp-controller="Home" asp-action="Portfolio">Family Function</a></li>
+                            <li><i class="bi bi-dash"></i> <a asp-controller="Home" asp-action="Portfolio">Farewell Party</a></li>
+                            <li><i class="bi bi-dash"></i> <a asp-controller="Home" asp-action="Portfolio">College Fest</a></li>
+                            <li><i class="bi bi-dash"></i> <a asp-controller="Home" asp-action="Portfolio">Corporate Events</a></li>
                         </ul>
                     </div>
 
@@ -189,7 +184,7 @@
                             Hinjawadi, Pune - 411057.<br>
                             India <br><br>
                             <strong>Phone:</strong> +1 5589 55488 55<br>
-                            <strong>Email:</strong> www.cognizant.com<br>
+                            <strong>Email:</strong> inquiry@cognizant.com<br>
                         </p>
 
                     </div>
