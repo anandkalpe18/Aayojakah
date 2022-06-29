@@ -34,9 +34,6 @@ namespace Aayojakah.Controllers
         {
             return View();
         }
-        public IActionResult PortfolioDetails()
-        {
-            return View();
-        }
+        
     }
 }

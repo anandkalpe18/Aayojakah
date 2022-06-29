@@ -17,7 +17,7 @@
     <meta content="" name="keywords">
 
     <!-- Favicons -->
-    <link href="~/ProjectLogo (1).png" rel="icon">
+    <link href="~/Homepage images/phone.png" rel="icon">
     <link href="~/assets/img/apple-touch-icon.png" rel="apple-touch-icon">
 
     <!-- Google Fonts -->
@@ -36,12 +36,7 @@
     <!-- Template Main CSS File -->
     <link href="~/assets/css/main.css" rel="stylesheet">
 
-    <!-- =======================================================
-    * Template Name: Nova - v1.0.0
-    * Template URL: https://bootstrapmade.com/nova-bootstrap-business-template/
-    * Author: BootstrapMade.com
-    * License: https://bootstrapmade.com/license/
-    ======================================================== -->
+
 </head>
 
 <body class="page-index">
@@ -51,8 +46,7 @@
         <div class="container-fluid container-xl d-flex align-items-center justify-content-between">
 
             <a asp-controller="Home" asp-action="Index" class="logo d-flex align-items-center">
-                <!-- Uncomment the line below if you also wish to use an image logo -->
-                <!-- <img src="~/assets/img/logo.png" alt=""> -->
+
                 <h1 class="d-flex align-items-center" style="font-family:'Baskerville Old Face'">Aayojakah - The Organizers</h1>
             </a>
 
@@ -62,11 +56,11 @@
             <nav id="navbar" class="navbar">
                 <ul>
                     <li><a asp-controller="Home" asp-action="Index" class="active">Home</a></li>
-                    <li><a asp-controller="Home" asp-action="About">About</a></li>
+                    <li><a asp-controller="Home" asp-action="About">About Us</a></li>
                     <li><a asp-controller="Home" asp-action="Services">Services</a></li>
                     <li><a asp-controller="Home" asp-action="Portfolio">Portfolio</a></li>
                     <li><a asp-controller="Home" asp-action="Team">Team</a></li>
-                    <li><a asp-controller="Home" asp-action="Contact">Contact</a></li>
+                    <li><a asp-controller="Home" asp-action="Contact">Contact Us</a></li>
                     <li><a asp-controller="Login" asp-action="Login">Login</a></li>
                     <li><a asp-controller="Registration" asp-action="Registration">Sign up</a></li>
                 </ul>
@@ -79,7 +73,7 @@
         <div class="container">
             <div class="row">
                 <div class="col-xl-4">
-                    <h2 data-aos="fade-up">Focus On What Matters</h2>
+                    <h2 data-aos="fade-up">Plan your events smarter, better.</h2>
                     <blockquote data-aos="fade-up" data-aos-delay="100">
                         <p>Our event management system automates and simplifies the entire event planning process. Starting with sourcing your venue and ending with custom dashboards and reports after your event. We have everything covered. </p>
                     </blockquote>
@@ -191,7 +185,7 @@
                     <div class="col-lg-4 col-md-6 service-item d-flex" data-aos="fade-up" data-aos-delay="100">
                         <div class="icon flex-shrink-0"><i class="bi bi-arrow-through-heart-fill"></i></div>
                         <div>
-                            <h4 class="title"><a href="#" class="stretched-link">Wedding</a></h4>
+                            <h4 class="title"><a asp-controller="Home" asp-action="Portfolio" class="stretched-link">Wedding</a></h4>
                             <p class="description">
                                 Wedding is the most important time of the life for you, it brings a lot of responsibilities and stress as well.
                                 There are tons of things that you have to worry about.
@@ -204,7 +198,7 @@
                     <div class="col-lg-4 col-md-6 service-item d-flex" data-aos="fade-up" data-aos-delay="200">
                         <div class="icon flex-shrink-0"><i class="bi bi-balloon"></i></div>
                         <div>
-                            <h4 class="title"><a href="#" class="stretched-link">Birthday</a></h4>
+                            <h4 class="title"><a asp-controller="Home" asp-action="Portfolio" class="stretched-link">Birthday</a></h4>
                             <p class="description">
                                 Planning a birthday party can be a very exciting task.
                                 You are focused on finding the perfect spot for the party and you are in charge of inviting all of the guests.
@@ -216,15 +210,18 @@
                     <div class="col-lg-4 col-md-6 service-item d-flex" data-aos="fade-up" data-aos-delay="300">
                         <div class="icon flex-shrink-0"><i class="bi bi-people"></i></div>
                         <div>
-                            <h4 class="title"><a href="#" class="stretched-link">Family Function</a></h4>
-                            <p class="description">Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur</p>
+                            <h4 class="title"><a asp-controller="Home" asp-action="Portfolio" class="stretched-link">Family Function</a></h4>
+                            <p class="description">
+                                Family functions are all about finding beautiful curtains and hinding behind them.family makes function joyful.
+                                Small moments in family functions makes lifetime memories.They make family grow strong and together.
+                            </p>
                         </div>
                     </div><!-- End Service Item -->
 
                     <div class="col-lg-4 col-md-6 service-item d-flex" data-aos="fade-up" data-aos-delay="400">
                         <div class="icon flex-shrink-0"><i class="bi bi-person-hearts"></i></div>
                         <div>
-                            <h4 class="title"><a href="#" class="stretched-link">Farewell</a></h4>
+                            <h4 class="title"><a asp-controller="Home" asp-action="Portfolio" class="stretched-link">Farewell</a></h4>
                             <p class="description">
                                 A farewell party is held for many occasions, including when someone leaves work, leaves the country,
                                 or leaves an activity that they have been a part for a long time. Plan the event to give them best farewell...
@@ -235,7 +232,7 @@
                     <div class="col-lg-4 col-md-6 service-item d-flex" data-aos="fade-up" data-aos-delay="500">
                         <div class="icon flex-shrink-0"><i class="bi bi-rainbow"></i></div>
                         <div>
-                            <h4 class="title"><a href="#" class="stretched-link">College Fest</a></h4>
+                            <h4 class="title"><a asp-controller="Home" asp-action="Portfolio" class="stretched-link">College Fest</a></h4>
                             <p class="description">
                                 College fest is an annual cultural event at a college or university organized by the student community with the support of their Faculties,
                                 Principal and Management.
@@ -246,7 +243,7 @@
                     <div class="col-lg-4 col-md-6 service-item d-flex" data-aos="fade-up" data-aos-delay="600">
                         <div class="icon flex-shrink-0"><i class="bi bi-person-workspace"></i></div>
                         <div>
-                            <h4 class="title"><a href="#" class="stretched-link">Corporate Events</a></h4>
+                            <h4 class="title"><a asp-controller="Home" asp-action="Portfolio" class="stretched-link">Corporate Events</a></h4>
                             <p class="description">
                                 Events in a corporate environment are often staged to communicate company strategy, change internal company behavior,
                                 launch a product or service, motivate, train or reward staff, or influence the external behavior of customers towards the brand.
@@ -277,63 +274,63 @@
             <div class="container" data-aos="fade-up">
                 <div class="row">
                     <div class="col-lg-7" data-aos="fade-up" data-aos-delay="100">
-                        <h3>Powerful Features for <br>Your Business</h3>
+                        <h3>Features - we provide</h3>
 
                         <div class="row gy-4">
 
                             <div class="col-md-6">
                                 <div class="icon-list d-flex">
-                                    <i class="ri-store-line" style="color: #ffbb2c;"></i>
-                                    <span>Easy Cart Features</span>
+                                    <i class="bi bi-wallet-fill" style="color: #ffbb2c;"></i>
+                                    <span>Budget Friendly</span>
                                 </div>
                             </div><!-- End Icon List Item-->
 
                             <div class="col-md-6">
                                 <div class="icon-list d-flex">
-                                    <i class="ri-bar-chart-box-line" style="color: #5578ff;"></i>
-                                    <span>Sit amet consectetur adipisicing</span>
+                                    <i class="bi bi-chat-dots" style="color: #5578ff;"></i>
+                                    <span>Easily Approachable</span>
                                 </div>
                             </div><!-- End Icon List Item-->
 
                             <div class="col-md-6">
                                 <div class="icon-list d-flex">
-                                    <i class="ri-calendar-todo-line" style="color: #e80368;"></i>
-                                    <span>Ipsum Rerum Explicabo</span>
+                                    <i class="bi bi-person-heart" style="color: #e80368;"></i>
+                                    <span>User Friendly Interface</span>
                                 </div>
                             </div><!-- End Icon List Item-->
 
                             <div class="col-md-6">
                                 <div class="icon-list d-flex">
-                                    <i class="ri-paint-brush-line" style="color: #e361ff;"></i>
-                                    <span>Easy Cart Features</span>
+                                    <i class="bi bi-lock-fill" style="color: #e361ff;"></i>
+                                    <span>Data Privacy</span>
                                 </div>
                             </div><!-- End Icon List Item-->
 
                             <div class="col-md-6">
                                 <div class="icon-list d-flex">
-                                    <i class="ri-database-2-line" style="color: #47aeff;"></i>
-                                    <span>Easy Cart Features</span>
+                                    <i class="bi bi-sliders" style="color: #47aeff;"></i>
+                                    <span>Customizable services</span>
                                 </div>
                             </div><!-- End Icon List Item-->
 
                             <div class="col-md-6">
                                 <div class="icon-list d-flex">
-                                    <i class="ri-gradienter-line" style="color: #ffa76e;"></i>
-                                    <span>Sit amet consectetur adipisicing</span>
+                                    <i class="bi bi-award" style="color: #ffa76e;"></i>
+                                    <span>Best service</span>
                                 </div>
                             </div><!-- End Icon List Item-->
 
                             <div class="col-md-6">
                                 <div class="icon-list d-flex">
-                                    <i class="ri-file-list-3-line" style="color: #11dbcf;"></i>
-                                    <span>Ipsum Rerum Explicabo</span>
+                                    <i class="bi bi-people-fill" style="color: #11dbcf;"></i>
+                                    <span>Skilled Team</span>
                                 </div>
                             </div><!-- End Icon List Item-->
 
                             <div class="col-md-6">
                                 <div class="icon-list d-flex">
-                                    <i class="ri-base-station-line" style="color: #ff5828;"></i>
-                                    <span>Easy Cart Features</span>
+                                    <i class="bi bi-clock-fill" style="color: #ff5828;"></i>
+                                    <span>10+ Years of Experience</span>
                                 </div>
                             </div><!-- End Icon List Item-->
                         </div>
@@ -376,7 +373,7 @@
                 <div class="row gy-4">
                     <div class="col-lg-5 col-md-12 footer-info">
                         <a href="index.html" class="logo d-flex align-items-center">
-                            <span>Aayojaka: ~ The Organizers</span>
+                            <span>Aayojakah</span>
                         </a>
                         <p>
                             <br />
@@ -395,26 +392,24 @@
                     <div class="col-lg-2 col-6 footer-links">
                         <h4>Useful Links</h4>
                         <ul>
-                            <li><i class="bi bi-dash"></i> <a href="#">Home</a></li>
-                            <li><i class="bi bi-dash"></i> <a href="#">About us</a></li>
-                            <li><i class="bi bi-dash"></i> <a href="#">Services</a></li>
-                            <li><i class="bi bi-dash"></i> <a href="#">Portfolio</a></li>
-                            <li><i class="bi bi-dash"></i> <a href="#">Team</a></li>
-                            <li><i class="bi bi-dash"></i> <a href="#">Contact us</a></li>
-
-
+                            <li><i class="bi bi-dash"></i> <a asp-controller="Home" asp-action="Index">Home</a></li>
+                            <li><i class="bi bi-dash"></i> <a asp-controller="Home" asp-action="About">About us</a></li>
+                            <li><i class="bi bi-dash"></i> <a asp-controller="Home" asp-action="Services">Services</a></li>
+                            <li><i class="bi bi-dash"></i> <a asp-controller="Home" asp-action="Portfolio">Portfolio</a></li>
+                            <li><i class="bi bi-dash"></i> <a asp-controller="Home" asp-action="Team">Team</a></li>
+                            <li><i class="bi bi-dash"></i> <a asp-controller="Home" asp-action="Contact">Contact us</a></li>
                         </ul>
                     </div>
 
                     <div class="col-lg-2 col-6 footer-links">
                         <h4>Our Services</h4>
                         <ul>
-                            <li><i class="bi bi-dash"></i> <a href="#">Wedding Ceremony </a></li>
-                            <li><i class="bi bi-dash"></i> <a href="#">Birthday Celebration </a></li>
-                            <li><i class="bi bi-dash"></i> <a href="#">Family Function</a></li>
-                            <li><i class="bi bi-dash"></i> <a href="#">Farewell Party</a></li>
-                            <li><i class="bi bi-dash"></i> <a href="#">College Fest</a></li>
-                            <li><i class="bi bi-dash"></i> <a href="#">Corporate Events</a></li>
+                            <li><i class="bi bi-dash"></i> <a asp-controller="Home" asp-action="Portfolio">Wedding Ceremony </a></li>
+                            <li><i class="bi bi-dash"></i> <a asp-controller="Home" asp-action="Portfolio">Birthday Celebration </a></li>
+                            <li><i class="bi bi-dash"></i> <a asp-controller="Home" asp-action="Portfolio">Family Function</a></li>
+                            <li><i class="bi bi-dash"></i> <a asp-controller="Home" asp-action="Portfolio">Farewell Party</a></li>
+                            <li><i class="bi bi-dash"></i> <a asp-controller="Home" asp-action="Portfolio">College Fest</a></li>
+                            <li><i class="bi bi-dash"></i> <a asp-controller="Home" asp-action="Portfolio">Corporate Events</a></li>
                         </ul>
                     </div>
 
@@ -425,7 +420,7 @@
                             Hinjawadi, Pune - 411057.<br>
                             India <br><br>
                             <strong>Phone:</strong> +1 5589 55488 55<br>
-                            <strong>Email:</strong> www.cognizant.com<br>
+                            <strong>Email:</strong> inquiry@cognizant.com<br>
                         </p>
 
                     </div>
