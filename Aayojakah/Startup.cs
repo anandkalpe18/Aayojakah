@@ -62,10 +62,12 @@ namespace Aayojakah
             });
 
             //Getting Connection String From Database
-            var connection = Configuration.GetConnectionString("DatabaseConnection");
+            //var connection = Configuration.GetConnectionString("DatabaseConnection");
 
-            // UseRowNumberForPaging for Using Skip and Take in .Net Core
-            services.AddDbContext<DatabaseContext>(options => options.UseSqlServer(connection, b => b.UseRowNumberForPaging()));
+            //// UseRowNumberForPaging for Using Skip and Take in .Net Core
+            //services.AddDbContext<DatabaseContext>(options => options.UseSqlServer(connection, b => b.UseRowNumberForPaging()));
+            services.AddDbContext<DatabaseContext>
+                (options => options.UseSqlServer(Configuration.GetConnectionString("DatabaseConnection")));
 
             services.AddTransient<IRegistration, RegistrationConcrete>();
             services.AddTransient<ICountry, CountryConcrete>();
@@ -89,10 +91,11 @@ namespace Aayojakah
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
-        public void Configure(IApplicationBuilder app, IHostingEnvironment env, ILoggerFactory loggerFactory)
+        public void Configure(IApplicationBuilder app, IHostingEnvironment env, ILoggerFactory loggerFactory, DatabaseContext db)
         {
             loggerFactory.AddConsole(Configuration.GetSection("Logging"));
             loggerFactory.AddDebug();
+            db.Database.EnsureCreated();
 
             if (env.IsDevelopment())
             {

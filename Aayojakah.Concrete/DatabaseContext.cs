@@ -1,5 +1,6 @@
 ﻿using Aayojakah.Model;
 using Microsoft.EntityFrameworkCore;
+using Microsoft.EntityFrameworkCore.ChangeTracking;
 
 namespace Aayojakah.Concrete
 {
@@ -9,6 +10,8 @@ namespace Aayojakah.Concrete
         {
 
         }
+
+
 
         public DbSet<Registration> Registration { get; set; }
         public DbSet<Country> Country { get; set; }
@@ -28,6 +31,8 @@ namespace Aayojakah.Concrete
         public DbSet<BookingFood> BookingFood { get; set; }
         public DbSet<BookingFlower> BookingFlower { get; set; }
         public DbSet<BookingLight> BookingLight { get; set; }
-        
+
+     
+
     }
 }
